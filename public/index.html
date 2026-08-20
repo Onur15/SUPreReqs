@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-39BEJP7SLM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-39BEJP7SLM');
+    </script>
+    
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-title" content="SUPreReqs" />
+    <meta
+      name="keywords"
+      content="SUPreReqs, Sabanci University, prerequisite, requirement, course"
+    />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Stop digging through the catalog to find prerequisites. Instantly find which Sabancı University courses require any course as a prerequisite and what that course itself requires."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -28,7 +42,41 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static content for search engine crawlers -->
+      <div style="font-family:sans-serif;max-width:800px;margin:40px auto;padding:20px;color:#333;">
+        <h1>SUPreReqs — Sabancı University Course Prerequisite Finder</h1>
+        <p>
+          Instantly find which Sabancı University courses require any course as a prerequisite,
+          and what prerequisites that course itself needs. Browse the full course catalog and
+          trace dependency chains in seconds.
+        </p>
+        <h2>How it works</h2>
+        <p>
+          Search any course code to see:
+        </p>
+        <ul>
+          <li>Which courses require it as a prerequisite</li>
+          <li>What prerequisites the course itself needs</li>
+        </ul>
+        <h2>Degree Programs</h2>
+        <p>Filter courses by undergraduate degree program:</p>
+        <ul>
+          <li>Computer Science and Engineering</li>
+          <li>Electronics Engineering</li>
+          <li>Industrial Engineering</li>
+          <li>Materials Science and Nano Engineering</li>
+          <li>Mechatronics Engineering</li>
+          <li>Molecular Biology, Genetics and Bioengineering</li>
+          <li>Data Science and Analytics</li>
+          <li>Economics</li>
+          <li>Management</li>
+          <li>Political Science and International Relations</li>
+          <li>Psychology</li>
+          <li>Visual Arts and Visual Communications Design</li>
+        </ul>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
